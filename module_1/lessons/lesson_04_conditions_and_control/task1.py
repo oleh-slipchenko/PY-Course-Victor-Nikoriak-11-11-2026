@@ -1,4 +1,5 @@
 # AI log: запитав як правильно використати в f-рядку оператор if-else
+
 value_in = input("Enter a number: ")
 if value_in.isdigit():
     num = int(value_in)

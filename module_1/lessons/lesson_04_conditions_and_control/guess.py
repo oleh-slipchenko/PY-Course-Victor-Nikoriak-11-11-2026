@@ -1,7 +1,6 @@
 import sys
 
 SECRET = 13
-
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
     print("Usage: python guess.py <number of attempts>")
 else:

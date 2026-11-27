@@ -10,4 +10,5 @@ else:
     for n in range(n, 0, -1):
         str_ret += f"{n}\n"
     str_ret += "Let`s go!\n"
+
 print(str_ret, end="")

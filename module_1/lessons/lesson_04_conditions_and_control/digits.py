@@ -1,7 +1,7 @@
 import sys
 
 sum_digits = 0
-# return n//10000 + n//1000%10 + n//100%10 + n//10%10 + n%10
+
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
     ret_str = "Usage: python digits.py <number>\n"
 else:
