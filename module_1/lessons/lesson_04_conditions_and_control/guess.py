@@ -2,26 +2,23 @@ import sys
 
 SECRET = 13
 
-# YOUR CODE HERE
-# BEGIN SOLUTION
 if len(sys.argv) != 2 or not sys.argv[1].isdigit():
-    print("Використання: python guess.py <кількість спроб>")
+    print("Usage: python guess.py <number of attempts>")
 else:
     attempts = int(sys.argv[1])
     while attempts > 0:
-        text = input("Твоє число: ").strip()
+        text = input("Your number: ").strip()
         if not text.isdigit():
-            print("Потрібне ціле число")
+            print("An integer is required")
             continue
         attempts -= 1
         guess = int(text)
         if guess == SECRET:
-            print("Вгадав!")
+            print("You guessed it!")
             break
         elif guess < SECRET:
-            print("Більше")
+            print("Higher")
         else:
-            print("Менше")
+            print("Lower")
     else:
-        print("Спроби закінчились. Було загадано:", SECRET)
-# END SOLUTION
+        print("You're out of attempts. The number was:", SECRET)
