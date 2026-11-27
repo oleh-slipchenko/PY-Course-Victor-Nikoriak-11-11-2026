@@ -15,6 +15,6 @@ while n < len(input_value):
         punctuations_count += 1
     n += 1
 
-print(f"{input_value} -> Chars: {chars_count}, Digits: {digits_count}, Punctuations: {punctuations_count}"
+print(f"{input_value} -> Chars: {chars_count}, Digits: {digits_count}, Punctuations: {punctuations_count}")
 
 # Hi, 2026! -> Chars: 2, Digits: 4, Punctuations: 2
